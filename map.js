@@ -1,15 +1,15 @@
-// const covid19api =
-// fetch('https://api.covid19api.com/summary')
-//   .then(res => {
-// 		console.log(res);
-// 		return res.json()})
-//   .then(data => {
-//     // do something with the data
-//     return data.json;
-// 	})
-// 	.catch(err => {
-// 		console.log(err);
-// 	});
+const covid19api =
+fetch('https://api.covid19api.com/summary')
+  .then(res => {
+		console.log(res);
+		return res.json()})
+  .then(data => {
+    // do something with the data
+    return data.json;
+	})
+	.catch(err => {
+		console.log(err);
+	});
 
 fetchCovidData()
 	.then(response => {
