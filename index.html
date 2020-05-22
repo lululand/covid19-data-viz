@@ -18,7 +18,7 @@
         <h1 class="title">Covid-19 Data Visualization</h1>
         <h2 class="subtitle">Built with <a href="https://bulma.io/" target="_blank" rel="noopener noreferrer">Bulma</a>,
           <a href="https://d3js.org/" target="_blank" rel="noopener noreferrer">D3.js</a> and <a
-            href="https://api.covid19api.com/" target="_blank" rel="noopener noreferrer">Covid19Api.com</a>.
+            href="https://covid19api.com/" target="_blank" rel="noopener noreferrer">Covid19Api.com</a>.
         </h2>
       </div>
     </div>
@@ -30,12 +30,11 @@
     <div class="column">
       <div class="card">
         <div class="card-content">
-          <h2 class="title">Stats Title</h2>
-          <h3 class="subtitle">subtitle</h3>
-          <p class="content">
-            Content area
-          </p>
+          <h2 class="title">OMFG</h2>
+          <h3 class="subtitle">it works</h3>
+          <div id="chart1"></div>
         </div>
+
         <footer class="card-footer">
           <div class="card-footer-item">
             <a href="#" class="button">btn</a>
@@ -49,14 +48,14 @@
         </footer>
       </div>
     </div>
+
     <div class="column">
       <div class="card">
-        <div class="card-content">
+        <div class="card-content" id="chart2">
+          
           <h2 class="title">Stats Title</h2>
           <h3 class="subtitle">subtitle</h3>
-          <p class="content">
-            Content area
-          </p>
+          <div id="map"></div>
         </div>
         <footer class="card-footer">
           <div class="card-footer-item">
@@ -71,9 +70,10 @@
         </footer>
       </div>
     </div>
+
     <div class="column">
       <div class="card">
-        <div class="card-content">
+        <div class="card-content" id="chart3">
           <h2 class="title">Stats Title</h2>
           <h3 class="subtitle">subtitle</h3>
           <p class="content">
@@ -93,7 +93,7 @@
         </footer>
       </div>
     </div>
-  </div>
+  </div> 
 
 
   <!-- END COLUMNS ------------------------------------->
@@ -108,7 +108,8 @@
     </div>
   </footer>
 
-  <script src="script.js">  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js"></script>
+  <script src="chart1.js">  </script>
 </body>
 
 </html>
