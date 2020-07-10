@@ -17,7 +17,7 @@ fetchCovidData()
 	})
 	.catch(error => {
 		console.log('error');
-		console.log(error);;
+		console.log(error);
 	})
 
 async function fetchCovidData() {
