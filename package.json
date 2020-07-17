@@ -24,6 +24,7 @@
   "homepage": "https://github.com/lululand/covid19-data-viz#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "nedb": "^1.8.0",
     "node-fetch": "^2.6.0"
   }
 }
