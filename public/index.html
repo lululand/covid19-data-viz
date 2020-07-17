@@ -11,6 +11,31 @@
 </head>
 
 <body>
+  <!--------- Coding train class  -->
+  <script>
+    if ('geolocation' in navigator) {   /* geolocation is available */
+      console.log('geolocation available');
+      navigator.geolocation.getCurrentPosition((position) => {
+        const lat = position.coords.latitude;
+        const lon = position.coords.longitude;
+        document.getElementById('latitude').textContent = lat;
+        document.getElementById('longitude').textContent = lon;
+      });
+    } else {
+      /* geolocation IS NOT available */
+      console.log('geolocation not available');
+    }
+  </script>
+
+  <h1>geolocation</h1>
+  <p>latitude: <span id="latitude"></span>&deg;
+    <br>
+    longitude: <span id="longitude"></span>&deg;
+  </p>
+
+  <!--------- Coding train class END -->
+
+
   <!-- HERO ------------------------------------->
   <section class="hero is-primary">
     <div class="hero-body">
@@ -27,7 +52,7 @@
 
   <!-- COLUMNS ------------------------------------->
   <div class="columns">
-    
+
     <div class="column">
       <div class="card">
         <div class="card-content">
@@ -91,7 +116,7 @@
         </footer>
       </div>
     </div>
-  </div> 
+  </div>
 
   <!-- END COLUMNS ------------------------------------->
 
