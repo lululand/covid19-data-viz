@@ -1,13 +1,10 @@
-// let key = '9faecf21-a17b-44b8-9038-2aad4c0a773f';
-
-// Coding Train -------------------------------------> 
 const express = require('express');
 const Datastore = require('nedb');
-const { response } = require('express');
+const fetch = require('node-fetch');
 
 const app = express();
-// const fetch = require('node-fetch');
-app.listen(3000, () => console.log('listening at 3000'));
+const port = process.env.PORT || 3000
+app.listen(port, () => console.log(`Starting the server at ${port}`));
 app.use(express.static('public'));
 app.use(express.json({ limit: '1mb' }));
 
