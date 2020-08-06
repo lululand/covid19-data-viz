@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/lululand/covid19-data-viz#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "expess": "0.0.1-security",
     "express": "^4.17.1",
     "nedb": "^1.8.0",
